@@ -2,6 +2,7 @@ import { Project } from './project';
 
 export const PROJECTS: Project[] = [
     {
+        id: 0,
         genre: "PeiP",
         name: "Jeu des allumettes",
         language: "Python",
@@ -9,6 +10,7 @@ export const PROJECTS: Project[] = [
         link: "https://github.com/MaevaLecavelier/PeiP-Matchsticks"
     },
     {
+        id: 0,
         genre: "PeiP",
         name: "Distributeur de snack",
         language: "C++",
@@ -16,6 +18,7 @@ export const PROJECTS: Project[] = [
         link: "https://github.com/MaevaLecavelier/PeiP-ArduinoProject"
     },
     {
+        id: 0,
         genre: "PeiP",
         name: "Bataille Navale",
         language: "PhP, JS, HTML, CSS",
@@ -23,6 +26,7 @@ export const PROJECTS: Project[] = [
         link:"https://github.com/MaevaLecavelier/PeiP-WEB_Project"
     },
     {
+        id: 1,
         genre: "Personnel",
         name: "Eat'n'Slide",
         language: "Lua",
@@ -30,6 +34,7 @@ export const PROJECTS: Project[] = [
         link: "https://github.com/MaevaLecavelier/Pico8_EatnSlide"
     },
     {
+        id: 1,
         genre: "Personnel",
         name: "Portfolio",
         language: "Angular",
@@ -37,6 +42,7 @@ export const PROJECTS: Project[] = [
         link: ""
     },
     {
+        id: 1,
         genre: "Personnel",
         name: "Rover Marsien",
         language: "Modélisation 3D, C++",
@@ -44,6 +50,7 @@ export const PROJECTS: Project[] = [
         link: "http://users.polytech.unice.fr/~pmasson/rover-team-2016.php"
     },
     {
+        id: 2,
         genre: "CAU - Echange universitaire",
         name: "Linux optimisation",
         language: "C",
@@ -52,6 +59,7 @@ export const PROJECTS: Project[] = [
     },
 
     {
+        id: 2,
         genre: "CAU - Echange universitaire",
         name: "Parser et analyzer",
         language: "Bison, Flex",
@@ -59,6 +67,7 @@ export const PROJECTS: Project[] = [
         link: "https://github.com/MaevaLecavelier/CAU-ProgrammingLanguage"
     },
     {
+        id: 2,
         genre: "CAU - Echange universitaire",
         name: "NLP et IR",
         language: "Python, Java",
@@ -66,6 +75,7 @@ export const PROJECTS: Project[] = [
         link: "https://github.com/MaevaLecavelier/CAU-NaturalLanguage"
     },
     {
+        id: 2,
         genre: "CAU - Echange universitaire",
         name: "Programmation multicore",
         language: "Java, C",
@@ -73,6 +83,7 @@ export const PROJECTS: Project[] = [
         link: "https://github.com/MaevaLecavelier/CAU-Multicore"
     },
     {
+        id: 2,
         genre: "CAU - Echange universitaire",
         name: "Programmation socket (UDP, TCP)",
         language: "Python",

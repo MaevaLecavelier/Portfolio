@@ -1,5 +1,6 @@
 export interface Project {
-    genre: string;
+    id: number;
+    genre: string,
     name: string;
     language: string;
     description: string;

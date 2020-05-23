@@ -1,38 +1,35 @@
-<nav class="navbar navbar-expand-md navbar-default">
+<nav class="navbar navbar-expand-md navbar-default bg-primary">
+    {{getRoute()}}
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         <span class="navbar-toggler-icon"></span>
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbar-menu">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item ">
-                <div ngbDropdown class="d-inline-block dropdown">
-                  <a class="navbar-brand" id="dropdownBasic1" ngbDropdownToggle>Mon parcours</a>
-                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
-                    <a class="dropdown-item" routerLink="/careerpath">Formation</a>
-                    <a class="dropdown-item" routerLink="/careerpath">Projets</a>
-                    <a class="dropdown-item" routerLink="/careerpath">Compétences</a>
-                  </div>
-                </div>
+    <div _ngcontent-c5 class="collapse navbar-collapse" id="navbar-menu">
+        <ul _ngcontent-c5 class="navbar-nav">
+            <li _ngcontent-c5 class="nav-item ">
+                <a _ngcontent-c5 class="navbar-brand" routerLink="careerpath">Mon parcours</a>
             </li>
-            <li class="nav-item ">
-                <div ngbDropdown class="d-inline-block dropdown">
-                  <a class="navbar-brand" id="dropdownBasic1" ngbDropdownToggle>A propos</a>
-                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
-                    <a class="dropdown-item"
-                        routerLink="/about">
-                        Mon profil</a>
-
-                    <a class="dropdown-item"
-                        routerLink="/about">
-                        Voyages</a>
-
-                  </div>
-                </div>
+                <li _ngcontent-c5 class="nav-item " *ngIf="href==='/careerpath'" >
+                    <a _ngcontent-c5  class="nav-link" routerLink="/careerpath">Formation</a>
+                </li>
+                <li _ngcontent-c5 class="nav-item " *ngIf="href==='/careerpath'">
+                    <a _ngcontent-c5 class="nav-link" routerLink="/careerpath">Projets</a>
+                </li>
+                <li _ngcontent-c5 class="nav-item " *ngIf="href==='/careerpath'">
+                    <a  _ngcontent-c5 class="nav-link" routerLink="/careerpath">Compétences</a>
+                </li>
+            <li _ngcontent-c5 class="nav-item ">
+                <a _ngcontent-c5 class="navbar-brand" routerLink="about">A propos</a>
             </li>
-            <li class="nav-item ">
-                <a class="navbar-brand" href="#pk">CV</a>
+                <li _ngcontent-c5 class="nav-item " *ngIf="href ==='/about'">
+                    <a _ngcontent-c5 class="nav-link" routerLink="/about">Mon profil</a>
+                </li>
+                <li _ngcontent-c5  class="nav-item " *ngIf="href ==='/about'">
+                    <a _ngcontent-c5 class="nav-link" routerLink="/about">Voyage</a>
+                </li>
+            <li _ngcontent-c5 class="nav-item ">
+                <a _ngcontent-c5 class="navbar-brand" href="#pk">CV</a>
             </li>
         </ul>
     </div>

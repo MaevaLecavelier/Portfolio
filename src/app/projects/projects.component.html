@@ -1,0 +1,27 @@
+<h4> Mes projets </h4>
+<ul>
+    <div *ngFor="let id of projectsId" >
+        <div class="parallax" style="background-image: url({{imgUrl[id]}})">
+            <nav _ngcontent-c5="" class="navbar navbar-expand-lg navbar-transparent">
+            <div _ngcontent-c5="" class="container" >
+                <a _ngcontent-c5="" id="banniere" >{{idToGenre[id]}}</a>
+            </div>
+            </nav>
+        </div>
+        <table>
+            <tr class="row">
+                <div *ngFor="let project of projects" class="project">
+                    <td *ngIf="project.id === id" class="column" >
+                        <h5>{{project.name}}</h5>
+                        <p>
+                             {{project.genre}} <br>
+                            {{project.language}} <br>
+                            {{project.description}} <br>
+                             <a href={{project.link}}>Lien</a> <br>
+                        </p>
+                    </td>
+                </div>
+            </tr>
+        </table>
+    </div>
+</ul>

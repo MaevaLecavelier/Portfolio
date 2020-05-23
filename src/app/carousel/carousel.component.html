@@ -1,0 +1,10 @@
+<p>carousel works!</p>
+<div class="carousel-container" height="1000px" align=center>
+    <igx-carousel #carousel [loop]="false" indicatorsOrientation="top">
+        <igx-slide  *ngFor="let slide of slides;">
+            <div class="image-container" >
+                <img style="width: 80%" [src]="slide.src">
+            </div>
+        </igx-slide>
+    </igx-carousel>
+</div>
