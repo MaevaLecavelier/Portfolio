@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./voyage.component.css']
 })
 export class VoyageComponent implements OnInit {
+    images = [
+        "assets/img/Allos.jpg",
+        "assets/img/Londres.jpg",
+        "assets/img/Seoul.jpg",
+    ];
+    constructor() { }
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+    ngOnInit(): void {
+    }
 
 }

@@ -3,6 +3,8 @@ import { Project } from './project';
 export const PROJECTS: Project[] = [
     {
         id: 0,
+        project:"matchsticks",
+        img: ['assets/img/projets/matchsticks.jpg'],
         genre: "PeiP",
         name: "Jeu des allumettes",
         language: "Python",
@@ -11,6 +13,12 @@ export const PROJECTS: Project[] = [
     },
     {
         id: 0,
+        project:"Arduino",
+        img: [
+            'assets/img/projets/arduino.jpg',
+            'assets/img/projets/arduino.png',
+            'assets/img/projets/distributeur.jpg',
+        ],
         genre: "PeiP",
         name: "Distributeur de snack",
         language: "C++",
@@ -19,6 +27,8 @@ export const PROJECTS: Project[] = [
     },
     {
         id: 0,
+        project:"battleship",
+        img: ['assets/img/projets/battleship.jpg'],
         genre: "PeiP",
         name: "Bataille Navale",
         language: "PhP, JS, HTML, CSS",
@@ -27,6 +37,11 @@ export const PROJECTS: Project[] = [
     },
     {
         id: 1,
+        project:"Pico",
+        img: [
+            'assets/img/projets/pico8.jpeg',
+            'assets/img/projets/eatnslide.jpg',
+        ],
         genre: "Personnel",
         name: "Eat'n'Slide",
         language: "Lua",
@@ -35,6 +50,8 @@ export const PROJECTS: Project[] = [
     },
     {
         id: 1,
+        project:"website",
+        img:['assets/img/projets/angular.jpg'],
         genre: "Personnel",
         name: "Portfolio",
         language: "Angular",
@@ -43,6 +60,12 @@ export const PROJECTS: Project[] = [
     },
     {
         id: 1,
+        project:"Rover",
+        img: [
+            'assets/img/projets/rover2.jpg',
+            'assets/img/projets/presrover.jpeg',
+            'assets/img/projets/rover.jpg',
+        ],
         genre: "Personnel",
         name: "Rover Marsien",
         language: "Modélisation 3D, C++",
@@ -51,6 +74,8 @@ export const PROJECTS: Project[] = [
     },
     {
         id: 2,
+        project:"linux",
+        img:['assets/img/projets/linux.jpg'],
         genre: "CAU - Echange universitaire",
         name: "Linux optimisation",
         language: "C",
@@ -60,6 +85,8 @@ export const PROJECTS: Project[] = [
 
     {
         id: 2,
+        project:"ppl",
+        img: ['assets/img/projets/ppl.jpg'],
         genre: "CAU - Echange universitaire",
         name: "Parser et analyzer",
         language: "Bison, Flex",
@@ -68,6 +95,8 @@ export const PROJECTS: Project[] = [
     },
     {
         id: 2,
+        project: "nlp",
+        img: ['assets/img/projets/nlp.jpg'],
         genre: "CAU - Echange universitaire",
         name: "NLP et IR",
         language: "Python, Java",
@@ -76,6 +105,8 @@ export const PROJECTS: Project[] = [
     },
     {
         id: 2,
+        project: "multicore",
+        img: ['assets/img/projets/multicore.jpg'],
         genre: "CAU - Echange universitaire",
         name: "Programmation multicore",
         language: "Java, C",
@@ -84,6 +115,8 @@ export const PROJECTS: Project[] = [
     },
     {
         id: 2,
+        project: "network",
+        img: ['assets/img/projets/network.jpg'],
         genre: "CAU - Echange universitaire",
         name: "Programmation socket (UDP, TCP)",
         language: "Python",
