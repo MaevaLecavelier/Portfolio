@@ -6026,8 +6026,17 @@ textarea.form-control {
     background-color: blue;
 }
 
-#banniere{
-    text-align: center;
+.mx-auto{
+    font-weight: 400;
+    font-size: 40px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.mx-auto:hover{
+    color: #FFFFFF;
 }
 
 .parallax {
@@ -6090,7 +6099,7 @@ ngb-carousel img {
 ngb-carousel {
     width: inherit;
     height: inherit;
-    border: none;
+    outline: none;
 }
 
 .carousel-inner {
@@ -6107,7 +6116,7 @@ ngb-carousel {
 
 .carousel-item.active{
     opacity: 1;
-    visibility: hidden;
+    visibility: visible;
     z-index: 10;
 }
 
@@ -6115,15 +6124,40 @@ ngb-carousel {
      z-index: 20;
 }
 
-.carousel-control-next {
+.carousel-control-next{
      z-index: 20;
+     color:red;
 }
 
 .carousel-indicators{
     z-index: 20;
 }
 
+.titre{
+    font-weight: 600;
+    margin: 5px 0px;
+    padding: 20px 15px;
+    font-size: 30px;
+    color: #66615B;
+    text-transform: uppercase;
+}
+
 .imgProjet{
     max-width: 90%;
     max-height: 200px;
+    padding: 4px;
+    border-right: 0.5px solid grey;
+    border-bottom: 0.5px solid grey;
+    border-left: 0.2px solid #e3e3e3;
+    border-top: 0.2px solid #e3e3e3;
+    box-shadow: 2px 2px 3px grey;
+
+}
+
+.sweetCarousel{
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-left: 0.6px solid #e3e3e3;
+    border-top: 0.6px solid #e3e3e3;
+    box-shadow: 4px 4px 5px grey;
 }

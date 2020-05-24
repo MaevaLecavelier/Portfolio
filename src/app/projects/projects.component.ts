@@ -7,6 +7,7 @@ import { PROJECTS } from '../allProjects';
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css']
 })
+
 export class ProjectsComponent implements OnInit {
     projects = PROJECTS
     projectsId = [0,1,2]

@@ -1,1 +1,21 @@
-<p>formation works!</p>
+<h3 class="titre"> Ma formation </h3>
+<div class="contain">
+    <table class="separateTable">
+        <tr *ngFor="let school of schools" >
+            <td class="imgTD">
+                <img _ngcontent-c7 alt="{{school.name}}" class="img-thumbnail img-responsive" src="{{school.img}}">
+            </td>
+            <td style="align:center;">
+                <div class="own-thumbnail">
+                    <h5 style="margin: 0;"> {{school.name}} </h5>
+                    <ul style="height:auto">
+                        <li class="dateF">{{school.date}}</li>
+                        <li class="lieuF">{{school.lieu}}</li>
+                        <li>{{school.description}}</li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <br>
+    </table>
+</div>

@@ -4,7 +4,7 @@ export const PROJECTS: Project[] = [
     {
         id: 0,
         project:"matchsticks",
-        img: ['assets/img/projets/matchsticks.jpg'],
+        img: ['assets/img/projets/matchsticks.png'],
         genre: "PeiP",
         name: "Jeu des allumettes",
         language: "Python",
@@ -28,7 +28,7 @@ export const PROJECTS: Project[] = [
     {
         id: 0,
         project:"battleship",
-        img: ['assets/img/projets/battleship.jpg'],
+        img: ['assets/img/projets/battleship.png'],
         genre: "PeiP",
         name: "Bataille Navale",
         language: "PhP, JS, HTML, CSS",

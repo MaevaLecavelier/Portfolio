@@ -1,40 +1,42 @@
-<h4> Mes projets </h4>
-<ul>
-    <div *ngFor="let id of projectsId" >
-        <div class="parallax" style="background-image: url({{imgUrl[id]}})">
-            <nav _ngcontent-c5="" class="navbar navbar-expand-lg navbar-transparent">
-            <div _ngcontent-c5="" class="container" >
-                <a _ngcontent-c5="" id="banniere" >{{idToGenre[id]}}</a>
-            </div>
-            </nav>
-        </div>
-        <table>
-            <tr class="row">
-                <div *ngFor="let project of projects" class="project">
-                    <td *ngIf="project.id === id" class="column" >
-                        <div *ngIf="(project.project=='Rover')|| (project.project == 'Arduino') || (project.project == 'Pico')">
-                            <ngb-carousel>
-                              <ng-template *ngFor="let img of project.img" ngbSlide >
-                                <div class="picsum-img-wrapper">
-                                  <img src="{{img}}" alt="{{img}}" class="imgProjet">
-                                </div>
-                              </ng-template>
-                            </ngb-carousel>
-                        </div>
-                        <div *ngIf="!((project.project=='Rover')|| (project.project == 'Arduino') || (project.project == 'Pico'))">
-                            <br><br>
-                            <img src="{{project.img}}" alt={{project.img}} class="imgProjet">
-                        </div>
-                        <h5>{{project.name}}</h5>
-                        <p>
-                             {{project.genre}} <br>
-                            {{project.language}} <br>
-                            {{project.description}} <br>
-                             <a href={{project.link}}>Lien</a> <br>
-                        </p>
-                    </td>
+<h3 class="titre"> Mes projets </h3>
+<div class="contain">
+    <ul>
+        <div *ngFor="let id of projectsId" >
+            <div class="parallax" style="background-image: url({{imgUrl[id]}})">
+                <nav _ngcontent-c5="" class="navbar navbar-expand-lg navbar-transparent mx-auto">
+                <div _ngcontent-c5="" class="container mx-auto" >
+                    <a _ngcontent-c5="" class="mx-auto" >{{idToGenre[id]}}</a>
                 </div>
-            </tr>
-        </table>
-    </div>
-</ul>
+                </nav>
+            </div>
+            <table>
+                <tr class="row">
+                    <div *ngFor="let project of projects" class="project">
+                        <td *ngIf="project.id === id" class="column">
+                            <ng-container *ngIf="(project.project=='Rover')|| (project.project == 'Arduino') || (project.project == 'Pico')" >
+                                <ngb-carousel  class="sweetCarousel">
+                                  <ng-template *ngFor="let img of project.img" ngbSlide >
+                                    <div class="picsum-img-wrapper">
+                                      <img src="{{img}}" alt="{{img}}">
+                                    </div>
+                                  </ng-template>
+                                </ngb-carousel>
+                            </ng-container>
+                            <div *ngIf="!((project.project=='Rover')|| (project.project == 'Arduino') || (project.project == 'Pico'))">
+                                <br><br>
+                                <img src="{{project.img}}" alt={{project.img}} class="imgProjet">
+                            </div>
+                            <h5>{{project.name}}</h5>
+                            <p>
+                                 {{project.genre}} <br>
+                                {{project.language}} <br>
+                                {{project.description}} <br>
+                                 <a href={{project.link}}>Lien</a> <br>
+                            </p>
+                        </td>
+                    </div>
+                </tr>
+            </table>
+        </div>
+    </ul>
+</div>
