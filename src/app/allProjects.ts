@@ -51,7 +51,7 @@ export const PROJECTS: Project[] = [
     {
         id: 1,
         project:"website",
-        img:['assets/img/projets/angular.jpg'],
+        img:['assets/img/projets/website.jpg'],
         genre: "Personnel",
         name: "Portfolio",
         language: "Angular",

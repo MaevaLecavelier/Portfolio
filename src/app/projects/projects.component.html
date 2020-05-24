@@ -12,17 +12,18 @@
             <tr class="row">
                 <div *ngFor="let project of projects" class="project">
                     <td *ngIf="project.id === id" class="column" >
-                        {{project.project}}
-                        <p *ngIf="(project.project=='Rover')|| (project.project == 'Arduino') || (project.project == 'Pico')"> hello! </p>
-                        <!--|| (project.project == 'Arduino') || (project.project == 'Pico')">-->
                         <div *ngIf="(project.project=='Rover')|| (project.project == 'Arduino') || (project.project == 'Pico')">
                             <ngb-carousel>
                               <ng-template *ngFor="let img of project.img" ngbSlide >
                                 <div class="picsum-img-wrapper">
-                                  <img src="{{img}}" alt="Angular Carousel 1">
+                                  <img src="{{img}}" alt="{{img}}" class="imgProjet">
                                 </div>
                               </ng-template>
                             </ngb-carousel>
+                        </div>
+                        <div *ngIf="!((project.project=='Rover')|| (project.project == 'Arduino') || (project.project == 'Pico'))">
+                            <br><br>
+                            <img src="{{project.img}}" alt={{project.img}} class="imgProjet">
                         </div>
                         <h5>{{project.name}}</h5>
                         <p>
