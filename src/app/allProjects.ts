@@ -51,11 +51,11 @@ export const PROJECTS: Project[] = [
     {
         id: 1,
         project:"website",
-        img:['assets/img/projets/website.jpg'],
+        img:['assets/img/projets/website.png'],
         genre: "Personnel",
         name: "Portfolio",
         language: "Angular",
-        description: "Ce site là :)",
+        description: "Ce site là :).",
         link: ""
     },
     {
@@ -69,7 +69,7 @@ export const PROJECTS: Project[] = [
         genre: "Personnel",
         name: "Rover Marsien",
         language: "Modélisation 3D, C++",
-        description: "Projet initié par d'autres étudiants",
+        description: "Projet initié par d'autres étudiants sur lequel j'ai participé en faisant des plans 3D et de la construction.",
         link: "http://users.polytech.unice.fr/~pmasson/rover-team-2016.php"
     },
     {
@@ -100,7 +100,7 @@ export const PROJECTS: Project[] = [
         genre: "CAU - Echange universitaire",
         name: "NLP et IR",
         language: "Python, Java",
-        description: "Différents projets réalisés sur la récupération et l'analyse de data. Exemple: différence de champs lexicaux entre différents genres cinématographiques, traitement requête sur une base de données...",
+        description: "Différents projets réalisés sur la récupération et l'analyse de data. Exemple: différence de champs lexicaux entre différents genres cinématographiques, traitement requête sur une base de données, etc...",
         link: "https://github.com/MaevaLecavelier/CAU-NaturalLanguage"
     },
     {
