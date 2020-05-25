@@ -5848,7 +5848,7 @@ textarea.form-control {
 }
 
 .register-footer .fa-heart {
-  color: #EB5E28;
+    color: #EB5E28;
 }
 
 .register-card label {
@@ -6068,7 +6068,7 @@ textarea.form-control {
 
 .titre{
     font-weight: 600;
-    margin: 5px 0px;
+    margin: 5px 0px 0px;
     padding: 20px 15px;
     font-size: 30px;
     color: #66615B;
@@ -6116,7 +6116,9 @@ textarea.form-control {
 
 .separateTable{
     border-collapse: separate;
-    border-spacing: 0px 75px;
+    border-spacing: 0px 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 [data-aos="fade"] {

@@ -1,1 +1,29 @@
-<p>skills works!</p>
+<div class="contain" >
+    <h2 class="titre"> Mes compétences </h2>
+    <table class="myTable">
+        <tr>
+            <td *ngFor="let skill of skills" class="column">
+                <img src="{{skill.img}}">
+                <p> {{skill.name}}</p>
+            </td>
+        </tr>
+        <tr>
+            <td *ngFor="let skill of itskills" class="column">
+                <img src="{{skill.img}}">
+                <p> {{skill.name}}</p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="contain" >
+    <h2 class="titre"> Langues </h2>
+    <table>
+        <tr>
+            <td *ngFor="let skill of lang" class="column" >
+                <img src="{{skill.img}}" class="img-circle img-no-padding img-responsive" style="width: 30%;" >
+                <p> {{skill.name}}</p>
+            </td>
+        </tr>
+    </table>
+</div>

@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profil.component.css']
 })
 export class ProfilComponent implements OnInit {
+    mail = "";
+    constructor() { }
 
-  constructor() { }
+    ngOnInit(): void {
+    }
 
-  ngOnInit(): void {
-  }
+    public open() {
+        this.mail="maeva.lecavelier@etu.unice.fr";
+    }
+
 
 }

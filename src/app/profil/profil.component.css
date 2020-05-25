@@ -6015,3 +6015,23 @@ textarea.form-control {
 .following img {
   max-width: 70px;
 }
+
+.iconBtn{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.email {
+    margin: 0 10px;
+    margin: 0 10px 0px 5px;
+    font-size: 18px;
+    position: relative;
+    top: 3px;
+    color: #66615b;
+    font-size: 14px;
+    padding: 10px 45px 10px 15px;
+    clear: both;
+    white-space: nowrap;
+    width: 100%;
+    display: block;
+}
