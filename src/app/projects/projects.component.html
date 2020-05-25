@@ -27,11 +27,18 @@
                                 <img src="{{project.img}}" alt={{project.img}} class="imgProjet">
                             </div>
                             <h5>{{project.name}}</h5>
-                            <p>
+                            <p class="descriptionP">
                                  {{project.genre}} <br>
                                 {{project.language}} <br>
                                 {{project.description}} <br>
-                                 <a href={{project.link}}>Lien</a> <br>
+                                <br>
+                                 <a *ngIf="project.link.length" href={{project.link}} target="_blank">
+                                     <button _ngcontent-c6=""  class="btn btn-warning btn-round" type="button" style="height: 45px;">
+                                         <i _ngcontent-c6="" class="fa fa-heart"><img class="iconBtn" src="./assets/img/git.png" ></i>
+                                         Voir projet
+                                     </button>
+                                 </a>
+                                <br>
                             </p>
                         </td>
                     </div>

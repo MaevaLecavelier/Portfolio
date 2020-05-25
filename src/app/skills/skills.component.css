@@ -6096,6 +6096,19 @@ textarea.form-control {
   }
 }
 
+.langue{
+    text-align: center;
+    align-items: center;
+}
+
+.langue img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
 /* carousel */
 ngb-carousel {
     max-width: 700px;
@@ -6171,4 +6184,33 @@ ngb-carousel {
     border-left: 0.6px solid #e3e3e3;
     border-top: 0.6px solid #e3e3e3;
     box-shadow: 4px 4px 5px grey;
+}
+
+.langue{
+    width: 30%;
+}
+
+.langue img{
+    width: 40%;
+}
+
+@media (max-width: 767px) {
+
+    .column{
+        display: table-cell;
+        margin-top: 20px;
+        width: 20%;
+    }
+    .column > img{
+        width: 100%;
+    }
+
+    .langue > img{
+        margin-right: 50px;
+        width: 50%;
+    }
+    tr {
+        align-items: center;
+        justify-content: center;
+    }
 }

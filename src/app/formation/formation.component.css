@@ -6088,6 +6088,7 @@ textarea.form-control {
 
 .own-thumbnail{
     padding-left: 20px;
+    padding-right: 20px;
     padding-top: 10px;
     margin-left: 50px;
     display: block;
@@ -6121,11 +6122,23 @@ textarea.form-control {
     margin-bottom: 0px;
 }
 
-[data-aos="fade"] {
-  opacity: 0;
-  transition-property: opacity;
-}
-
-[data-aos="fade"].aos-animate {
-  opacity: 1;
+@media (max-width: 767px) {
+    table, td, tr {
+    display: block;
+    text-align: center;
+    }
+    tr{
+        align-items: center;
+    }
+    td{
+        align-items: center;
+        align-content: center;
+    }
+    .imgTD{
+        width: 100%;
+    }
+    .own-thumbnail{
+        margin: 0 auto;
+        padding-left:
+    }
 }

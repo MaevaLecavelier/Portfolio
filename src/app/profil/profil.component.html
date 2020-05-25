@@ -1,21 +1,23 @@
 <div align=center class="around">
     <img _ngcontent-c7 alt="Photo profil" class="img-circle img-no-padding img-responsive"  src="assets/img/photo.jpg">
-    <h2> Maëva Lecavelier </h2>
-    <h3> Étudiante Ingénieure Informatique.</h3>
-    <br>
-    <p>21 ans </p>
-    <p>Saint Laurent du Var, France</p>
-    <p> Je suis à la recherche d'une alternance d'une durée de 2 ans à partir d'août 2020 </p>
+    <div class="paragraphe">
+        <h2> Maëva Lecavelier </h2>
+        <h3> Étudiante Ingénieure Informatique.</h3>
+        <br>
+        <p>21 ans </p>
+        <p>Saint Laurent du Var, France</p>
+        <p style="padding-right: 20px; padding-left: 20px;"> Je suis à la recherche d'une alternance d'une durée de 2 ans à partir d'août 2020 </p>
+    </div>
     <div style="margin-top: 50px; margin-bottom: 100px;">
-        <a routerLink="/careerpath" style="margin-right: 200px;">
+        <a routerLink="/careerpath" class="botBtn">
             <button _ngcontent-c6=""  class="btn btn-danger btn-round" type="button" > Mes projets </button>
         </a>
-        <a href="mailto:maeva.lecavelier@etu.unice.fr" (click)="open()">
+        <a href="mailto:maeva.lecavelier@etu.unice.fr">
             <button _ngcontent-c6=""  class="btn btn-danger btn-round" type="button" >
                 <i _ngcontent-c6="" class="fa fa-heart"><img class="iconBtn" src="./assets/img/mail.png" ></i>
                 Contactez-moi
             </button>
         </a>
-        <p *ngIf="mail.length" class="email"> {{mail}}</p>
+        <p class="email"> {{mail}}</p>
     </div>
 </div>

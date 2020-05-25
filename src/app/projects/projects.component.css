@@ -6160,3 +6160,41 @@ ngb-carousel {
     border-top: 0.6px solid #e3e3e3;
     box-shadow: 4px 4px 5px grey;
 }
+
+.iconBtn{
+    width: 30px;
+    margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+    .project{
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+        text-align: center;
+    }
+    .column{
+        width: 100%;
+        display: block;
+    }
+    .sweetCarousel{
+        width: 90%;
+    }
+    .sweetCarousel > img{
+        width: 90%;
+    }
+    .picsum-img-wrapper{
+        width: 100%;
+    }
+    .project:nth-child(2){
+        width: 100%;
+    }
+    .descriptionP{
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .mx-auto{
+        font-size: 20px;
+    }
+}

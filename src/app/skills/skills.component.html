@@ -4,9 +4,10 @@
         <tr>
             <td *ngFor="let skill of skills" class="column">
                 <img src="{{skill.img}}">
-                <p> {{skill.name}}</p>
+                <p> {{skill.name}}</p><br>
             </td>
         </tr>
+
         <tr>
             <td *ngFor="let skill of itskills" class="column">
                 <img src="{{skill.img}}">
@@ -20,8 +21,8 @@
     <h2 class="titre"> Langues </h2>
     <table>
         <tr>
-            <td *ngFor="let skill of lang" class="column" >
-                <img src="{{skill.img}}" class="img-circle img-no-padding img-responsive" style="width: 30%;" >
+            <td *ngFor="let skill of lang" class="langue" >
+                <img src="{{skill.img}}" class="img-circle img-no-padding img-responsive" >
                 <p> {{skill.name}}</p>
             </td>
         </tr>
